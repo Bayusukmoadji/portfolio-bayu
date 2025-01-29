@@ -1405,7 +1405,7 @@ section,
 }
 /* skill and tools and */
 
-/* portofolio */
+/* Portfolio */
 .portfolio-card {
   background: #fff;
   border-radius: 10px;
@@ -1413,6 +1413,10 @@ section,
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 400px; /* Menjaga semua kartu tetap seragam */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .portfolio-card:hover {
@@ -1426,11 +1430,6 @@ section,
   color: #333;
 }
 
-.portfolio-card p {
-  color: #666;
-  margin-bottom: 20px;
-}
-
 .portfolio-card .btn {
   background-color: #007bff;
   color: #fff;
@@ -1442,9 +1441,23 @@ section,
 .portfolio-card .btn:hover {
   background-color: #0056b3;
 }
-/* portofolio and */
 
-/* webkms */
+/* Mengatur ukuran gambar agar semua card memiliki tampilan yang seragam */
+.portfolio-card img {
+  width: 100%; /* Agar gambar tidak melebihi batas card */
+  max-height: 200px; /* Menyesuaikan tinggi gambar */
+  object-fit: cover; /* Menjaga gambar tetap proporsional */
+  border-radius: 8px;
+}
+
+/* Mengatur ukuran kartu agar seragam */
+@media (min-width: 768px) {
+  .portfolio-card {
+    height: 100%;
+  }
+}
+
+/* project 1 */
 .webkms {
   max-width: 100%; /* Agar gambar responsif */
   width: 300px; /* Atur ukuran lebar gambar */
@@ -1453,5 +1466,4 @@ section,
   margin: 0 auto; /* Memusatkan gambar */
   border-radius: 10px;
 }
-
-/* webkms end */
+/* project 1 end */
