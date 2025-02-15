@@ -1456,14 +1456,3 @@ section,
     height: 100%;
   }
 }
-
-/* project 1 */
-.webkms {
-  max-width: 100%; /* Agar gambar responsif */
-  width: 300px; /* Atur ukuran lebar gambar */
-  height: auto; /* Menjaga rasio aspek gambar */
-  display: block; /* Menghilangkan margin default */
-  margin: 0 auto; /* Memusatkan gambar */
-  border-radius: 10px;
-}
-/* project 1 end */
